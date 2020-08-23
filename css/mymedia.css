@@ -1,0 +1,215 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (min-width: 1200px){
+    .container {
+        max-width: 1210px;
+    }
+}
+@media screen and (max-width: 1260px){
+    .container {
+        max-width: 90%;
+    }
+}
+@media screen and (max-width: 1160px){
+    body .navbar-nav li{
+        padding: 15px;
+    }
+    body .content-top,body .f-head,body .filter-blk{
+        padding-left: 15px;
+    }
+    body .navbar-nav li:first-child.active ~ .smlslide{
+        left:15px;
+    }
+    body .navbar-nav li:nth-child(2).active ~ .smlslide{
+        left: 154px;
+        width: 70px;
+    }
+    body .navbar-nav li:nth-child(3).active ~ .smlslide{
+        left: 242px;
+        width: 87px;
+    }
+    body .navbar-nav li:nth-child(4).active ~ .smlslide{
+        left: 347px;
+        width: 125px;
+    }
+
+
+}
+@media screen and (max-width:990px){
+    .cont-left{
+        width: 60%;
+    }
+    .navbar-toggler{
+        position: absolute;
+        left: 0;
+        top: -58px;
+    }
+    .logo{
+        margin-left: 80px;
+    }
+    body .smlslide{
+        transition: bottom .25s;
+        -webkit-transition: bottom .5s;
+        -moz-transition: bottom .5s;
+        -o-transition: bottom .5s;
+    }
+    body .navbar-nav li:first-child.active ~ .smlslide {
+        left: -1px;
+        width: 129px;
+        bottom: 155px;
+    }
+    body .navbar-nav li:nth-child(4).active ~ .smlslide {
+        left: -1px;
+        width: 129px;
+        bottom: 0;
+    }
+    body .navbar-nav li:nth-child(2).active ~ .smlslide {
+        left: -1px;
+        width: 129px;
+        bottom: 105px;
+    }
+    body .navbar-nav li:nth-child(3).active ~ .smlslide {
+        left: -1px;
+        bottom: 53px;
+        width: 129px;
+    }
+}
+@media screen and (max-width:860px){
+    .search-box {
+        position: relative;     
+        min-width: 72%;
+    }
+    .filer-drop.dropdown {
+        max-width: 25%;
+    }
+    .search-box .search-input {
+        padding: 10px 6px 10px 40px;
+    }
+    .cont-left {
+        width: 57%;
+    }
+}
+@media screen and (min-width:768px){
+    #main .col-md-2{ 
+        max-width: 25%;
+        min-width: 25%;
+    }
+    #main .col-md-6{ 
+        min-width: 45%;
+        max-width: 45%;
+    }
+    #main .col-md-4{ 
+        min-width: 30%;
+        max-width: 30%;
+    }
+}
+@media screen and (max-width:767px){
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+     
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+        border-radius: 10px;
+        background-color: #fafafa;
+    }
+     
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: #3041A7;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    }
+    .search-box {
+        position: relative;     
+        min-width: 72%;
+    }
+    .filer-drop.dropdown {
+        max-width: 25%;
+    }
+    .search-box .search-input {
+        padding: 10px 6px 10px 40px;
+    }
+    .cont-left {
+        width: 57%;
+    }
+    .filter{
+        max-height: 50vh;
+        min-height: 50vh;
+        overflow-y: auto;
+        margin-bottom: 20px;
+    }
+    .details-wrap{
+        margin-top:20px;
+    }
+}
+@media screen and (max-width: 600px){
+    .cont-left {
+        width:100%;
+    }
+    .content-top ,.content-middle > .d-flex{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start!important;
+    }
+    .search-box {
+        position: relative;
+        min-width: 100%;
+    }
+    .content-top .see{
+        margin-top:20px;
+    }
+    .filer-drop.dropdown {
+        /* max-width: 100%; */
+        margin-top:10px;
+    }
+    .show-hide{
+        float: right;
+    }
+    .filter {
+        max-height: 100vh;
+        min-height: 100vh;
+        overflow-y: auto;
+        width: 80%;
+        top: 0;
+        position: fixed;
+        right: 0;
+        margin-bottom: 0;
+    }
+    /* .filter-list.collapse{
+        display: block;
+    } */
+}
+@media screen and (max-width: 410px){
+    .header-top > * {
+        margin-left:8px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .show-hide {
+      display: inline-block;
+    }
+    .information {
+      display: none;
+    }
+    .myrow{
+        position: relative;
+    }
+    .shwfilter{
+        position: absolute;
+        right:0;
+        top:60px;
+        z-index: 100;
+    }
+    .show-info{
+        display: block!important;
+    }
+  }
+  @media only screen and (min-width: 600px) {
+    .show-hide {
+      display: none;
+    }
+    .information {
+      display: block;
+    }
+  }

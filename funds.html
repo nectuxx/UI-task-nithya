@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Funds</title>
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/mymedia.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+</head>
+<body>
+  <header class="header"><!-- Header start -->
+    <div class="container">
+      <div class="row">
+        <div class="w-100 wrap d-flex justify-content-between align-items-center">
+          <div class="logo">
+            <a title="RoboX"  href="#"><img src="images/RoboX.svg" alt="images" /></a>
+          </div>
+          <div class="header-top">
+              <a href="#" class="bell animated tada"><img src="images/bell.svg" alt="images" /></a>
+              <button class="profile"><span>A</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header End -->
+    <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light"><!-- Navigation Start-->
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Dashboard </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Goals</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Funds</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Collections</a>
+                  </li>
+                  <li class="smlslide"></li>
+                </ul>
+              </div>
+            </nav><!-- Navigation End-->
+            <section id="main"><!-- Main content start -->
+                <div class="content-top d-flex w-100 align-items-center justify-content-between">
+                  <div class="cont-left">
+                    <h3>Create your own portfolio</h3>
+                    <p>Choose funds based on your comfort and understanding.And create your own portfolio</p>
+                  </div>
+                  <button class="see"><span>See All Invested Funds</span></button>
+                </div>
+                <div class="row myrow">
+                  <div class="col-md-2 col-12 shwfilter">
+                    <div class="show-hide">Show Filter</div>
+                    <div class="filter information"><!-- Filter start-->
+                      <h5 class="f-head w-100 d-flex justify-content-between align-items-center">
+                        <span>Filter</span>
+                        <a href="#">Clear all</a>
+                      </h5>
+                      <div class="filter-blk">
+                        <div class="filter-title">
+                          <a class="btn btn-primary " data-toggle="collapse" href="#fcategory" role="button" aria-expanded="false" aria-controls="fcategory">
+                            Fund Category
+                          </a>
+                        </div>
+                        <div id="fcategory" class=" filter-list">
+                          <form action="#">
+                            <div class="flist">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck" multiple name="example0">
+                                <label class="custom-control-label" for="customCheck">All</label>
+                              </div>
+                            </div>
+                            <div class="flist">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1" multiple name="example0">
+                                <label class="custom-control-label" for="customCheck1">Gold</label>
+                              </div>
+                            </div>
+                            <div class="flist">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2" multiple name="example0">
+                                <label class="custom-control-label" for="customCheck2">Large Gap</label>
+                              </div>
+                            </div>
+                            <div class="flist">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck3" multiple name="example0">
+                                <label class="custom-control-label" for="customCheck3">Small Gap</label>
+                              </div>
+                            </div>
+                            <div class="flist">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck4"  multiple name="example4">
+                                <label class="custom-control-label" for="customCheck4">Multi Cap</label>
+                              </div>
+                            </div>
+                            <div class="flist">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck5" multiple name="example5">
+                                <label class="custom-control-label" for="customCheck5">Balanced </label>
+                              </div>
+                            </div>
+                            <div class="flist">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck6" multiple name="example6">
+                                <label class="custom-control-label" for="customCheck6">Liquid</label>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      <div class="filter-blk">
+                        <div class="filter-title">
+                          <a class="btn btn-primary " data-toggle="collapse" href="#frating" role="button" aria-expanded="false" aria-controls="frating">
+                            Rating
+                          </a>
+                        </div>
+                        <div id="frating" class=" filter-list">
+                          <form action="#">
+                            <div class="flist">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="custom0" multiple name="example1">
+                                <label class="custom-control-label" for="custom0">All</label>
+                              </div>
+                            </div>
+                            <div class="flist">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="custom1" multiple name="example1">
+                                <label class="custom-control-label" for="custom1">1 Star</label>
+                              </div>
+                            </div>
+                            <div class="flist">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="custom2" multiple name="example1">
+                                <label class="custom-control-label" for="custom2">2 Star</label>
+                              </div>
+                            </div>
+                            <div class="flist">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="custom3" multiple name="example1">
+                                <label class="custom-control-label" for="custom3">3 Star</label>
+                              </div>
+                            </div>
+                            <div class="flist">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="custom5"  multiple name="example1">
+                                <label class="custom-control-label" for="custom5">4 Star</label>
+                              </div>
+                            </div>
+                            <div class="flist">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="custom6" multiple name="example1">
+                                <label class="custom-control-label" for="custom6">5 star </label>
+                              </div>
+                            </div>
+                            <div class="flist">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="custom7" multiple name="example1">
+                                <label class="custom-control-label" for="custom7">Un rated</label>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      <div class="filter-blk">
+                        <div class="filter-title">
+                          <a class="btn btn-primary " data-toggle="collapse" href="#AMC" role="button" aria-expanded="false" aria-controls="AMC">
+                            AMC
+                          </a>
+                        </div>
+                        <div id="AMC" class="collapse filter-list">
+                          <form action="#">
+                            <div class="flist">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customchk" multiple name="example2">
+                                <label class="custom-control-label" for="customchk">All</label>
+                              </div>
+                            </div>
+                            <div class="flist">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customchk1" multiple name="example2">
+                                <label class="custom-control-label" for="customchk1">1 Star</label>
+                              </div>
+                            </div>
+                            <div class="flist">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customchk2" multiple name="example2">
+                                <label class="custom-control-label" for="customchk2">2 Star</label>
+                              </div>
+                            </div>
+                           
+                          </form>
+                        </div>
+                      </div>
+                    </div><!-- Filter End-->
+                  </div>
+                  <div class="col-md-6 col-12">
+                    <div class="content-middle">
+                      <div class="d-flex w-100 justify-content-between align-items-center">
+                        <div class="search-box">
+                          <input type="text" class="search-input" value="" placeholder="Search all mutual funds" />
+                          <button class="search-button">Search</button>
+                        </div>
+                        <div class="filer-drop dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sort
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Date</a>
+                            <a class="dropdown-item" href="#">Rating</a>
+                            <a class="dropdown-item" href="#">AMC</a>
+                          </div>
+                        </div>
+                       
+                      </div>
+                    </div>
+                    <div class="data-list">
+                        <div class="data-l d-flex justify-content-start align-items-center">
+                          <div class="img-wrap">
+                              <img src="images/mirae_groww.svg" alt="images" />
+                          </div>
+                          <div class="data-right">
+                              <h6>Mirae Asset Emerging Bluechip Fund Direct Growth</h6>
+                              <ul>
+                                <li><span>Return:</span>18.32%</li>
+                                <li><span>Fund Size:</span>6000.01 Cr</li>
+                                <li>Aggressive</li>
+                                <li>Debt</li>
+                              </ul>
+                          </div>
+                        </div>
+                        <div class="data-l d-flex justify-content-start align-items-center">
+                          <div class="img-wrap">
+                              <img src="images/nippon_groww.png" alt="images" />
+                          </div>
+                          <div class="data-right">
+                              <h6>Nippon India Gilt Securities Fund Direct Growth</h6>
+                              <ul>
+                                <li><span>Return:</span>18.32%</li>
+                                <li><span>Fund Size:</span>6000.01 Cr</li>
+                                <li>Moderately Aggressive</li>
+                                <li>Debt</li>
+                              </ul>
+                          </div>
+                        </div>
+                        <div class="data-l act d-flex justify-content-start align-items-center">
+                          <div class="img-wrap">
+                              <img src="images/axis_groww.svg" alt="images" />
+                          </div>
+                          <div class="data-right">
+                              <h6>Axis Bluechip Fund Direct Plan Growth</h6>
+                              <ul>
+                                <li><span>Return:</span>18.32%</li>
+                                <li><span>Fund Size:</span>6000.01 Cr</li>
+                                <li>Moderately Aggressive</li>
+                                <li>Debt</li>
+                              </ul>
+                          </div>
+                        </div>
+                        <div class="data-l d-flex justify-content-start align-items-center">
+                          <div class="img-wrap">
+                              <img src="images/Rectangle 1051.png" alt="images" />
+                          </div>
+                          <div class="data-right">
+                              <h6>SBI Banking & Financial Services Fund Direct Growth</h6>
+                              <ul>
+                                <li><span>Return:</span>18.32%</li>
+                                <li><span>Fund Size:</span>6000.01 Cr</li>
+                                <li>Moderately Aggressive</li>
+                                <li>Debt</li>
+                              </ul>
+                          </div>
+                        </div>
+                        <div class="data-l d-flex justify-content-start align-items-center">
+                          <div class="img-wrap">
+                              <img src="images/mirae_groww.svg" alt="images" />
+                          </div>
+                          <div class="data-right">
+                              <h6>Mirae Asset Emerging Bluechip Fund Direct Growth</h6>
+                              <ul>
+                                <li><span>Return:</span>18.32%</li>
+                                <li><span>Fund Size:</span>6000.01 Cr</li>
+                                <li>Aggressive</li>
+                                <li>Debt</li>
+                              </ul>
+                          </div>
+                        </div>
+                        <div class="data-l d-flex justify-content-start align-items-center">
+                          <div class="img-wrap">
+                              <img src="images/nippon_groww.png" alt="images" />
+                          </div>
+                          <div class="data-right">
+                              <h6>Nippon India Gilt Securities Fund Direct Growth</h6>
+                              <ul>
+                                <li><span>Return:</span>18.32%</li>
+                                <li><span>Fund Size:</span>6000.01 Cr</li>
+                                <li>Moderately Aggressive</li>
+                                <li>Debt</li>
+                              </ul>
+                          </div>
+                        </div>
+                        <div class="data-l d-flex justify-content-start align-items-center">
+                          <div class="img-wrap">
+                              <img src="images/axis_groww.svg" alt="images" />
+                          </div>
+                          <div class="data-right">
+                              <h6>Axis Bluechip Fund Direct Plan Growth</h6>
+                              <ul>
+                                <li><span>Return:</span>18.32%</li>
+                                <li><span>Fund Size:</span>6000.01 Cr</li>
+                                <li>Moderately Aggressive</li>
+                                <li>Debt</li>
+                              </ul>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-12">
+                    <div class="details-wrap">
+                      <div class="d-flex w-100 justify-content-start align-items-center">
+                        <div class="img-wrap">
+                          <img src="images/axis_groww.svg" alt="images" />
+                        </div>
+                        <div class="data-right">
+                            <h6>Axis Bluechip Fund Direct Plan Growth</h6>
+                            <ul>
+                              <li>Debt</li>
+                              <li>Moderately Aggressive</li>
+                            </ul>
+                        </div>
+                      </div>
+                      <form action="#">
+                        <div class="form-field">
+                          <label>Lumpsum Amount</label>
+                          <div class="num">
+                            <input type="text" class="form-control" value="35,000" />
+                          </div>
+                          <p>(Minimum of ₹1,00,000; Multiples of ₹1)</p>
+                        </div>
+                        <div class="form-field">
+                          <label>SIP Amount</label>
+                          <div class="num">
+                          <input type="text" class="form-control" value="3,000" />
+                          </div>
+                          <p>(Minimum of ₹500; Multiples of ₹100)</p>
+                        </div>
+                        <div class="form-field">
+                          <label>SIP Date<span data-toggle="tooltip" title="Note: Lorem ipsum lorem !">(Every month)</span></label>
+                          <div class="dropd dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              12th
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">13th</a>
+                              <a class="dropdown-item" href="#">15th</a>
+                              <a class="dropdown-item" href="#">14th</a>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="add" >Add</button>
+                        <button class="cancel" >cancel</button>
+                      </form>
+                    </div>
+                  </div>
+              </div>
+            </section><!-- Main content End -->
+        </div>
+    </div>
+    <footer ><!-- Footer start-->
+      <div class="container">
+        <div class="row">
+          <div class="d-flex w-100 justify-content-between align-items-center">
+            <p>&copy; Copyright 2020-2021</p>
+            <p>Powered by <img src="images/RoboX.svg" alt="images" /></p>
+          </div>
+        </div>
+      </div>
+    </footer><!-- Footer End-->
+
+<div id="preloader"></div>
+<a href="#" id="back-to-top" class="back-to-top"><i class="fa fa-arrow-up"></i></a>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+<script type="text/javascript" src="js/popper.min.js"></script> 
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+
+<script src="js/main.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $(".dropdown-toggle").dropdown();
+      $('.show-hide').click(function(e){
+          e.stopPropagation();
+          $('.information').toggleClass('show-info');
+      });
+      $('.dropdown-toggle').click(function(e){
+         e.stopPropagation();
+         
+      });
+      
+      $('body,html').click(function(e){
+        $('.information').removeClass('show-info');
+      });
+     
+      $( window ).resize(function() {
+          if( $( window ).width()>600){
+            $('.information').toggle(true);
+          }else{
+          
+            $('.information').toggle(false);
+     
+          }
+      });
+  });
+</script>   
+</body>
+</html>
